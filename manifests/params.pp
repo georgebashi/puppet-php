@@ -113,6 +113,8 @@ class php::params(
       $compiler_packages       = ['gcc', 'gcc-c++', 'make']
       $manage_repos            = false
       $root_group              = 'root'
+      $ext_tool_enable         = undef
+      $ext_tool_query          = undef
     }
     'FreeBSD': {
       $config_root             = pick($cfg_root, '/usr/local/etc')
